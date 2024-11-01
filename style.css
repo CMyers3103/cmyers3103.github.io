@@ -1,5 +1,6 @@
 /* Basic Reset */
 * {
+    text-align: center;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -7,6 +8,7 @@
   
   /* Body Styling */
   body {
+    text-align: center;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -68,7 +70,7 @@
     color: #333;
     margin-bottom: 1rem;
   }
-    
+
   /* Link Styling */
   a {
     color: #007acc;
