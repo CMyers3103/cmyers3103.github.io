@@ -1,5 +1,6 @@
 /* Basic Reset */
 * {
+    list-style-position: inside;
     text-align: center;
     margin: 0 auto;
     padding: 0;
@@ -8,6 +9,7 @@
   
   /* Body Styling */
   body {
+    list-style-position: inside;
     text-align: center;
     font-family: Arial, sans-serif;
     line-height: 1.6;
