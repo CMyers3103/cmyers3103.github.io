@@ -18,6 +18,27 @@
     padding: 2rem;
     background-color: #f4f4f4;
   }
+
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Button Hover Effect */
+  nav a:hover {
+    background-color: #007acc;
+    color: #fff;
+  }
   
   header h1 {
     font-size: 2.5rem;
