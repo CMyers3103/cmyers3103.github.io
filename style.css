@@ -107,3 +107,8 @@
 #resume .subsection {
     margin-left: 20px;
 }
+
+#resume {
+    width: 80%; /* Or whatever width you prefer */
+    margin: 0 auto;
+}
