@@ -84,6 +84,7 @@
   }
   
   #resume {
+    list-style-position: inside;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
@@ -91,6 +92,7 @@
 
 #resume h1,
 #resume h2 {
+    list-style-position: inside;
     color: #333;
 }
 
