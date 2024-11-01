@@ -89,3 +89,21 @@
     text-decoration: underline;
   }
   
+  #resume {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+#resume h1,
+#resume h2 {
+    color: #333;
+}
+
+#resume .section {
+    margin-bottom: 20px;
+}
+
+#resume .subsection {
+    margin-left: 20px;
+}
