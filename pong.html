@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong Game</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #222;
+    }
+    canvas {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="pong.html">Pong</a>
+      </nav>
+      
+<canvas id="pongCanvas" width="600" height="400"></canvas>
+
+<script>
+  const canvas = document.getElementById("pongCanvas");
+  const ctx = canvas.getContext("2d");
+
+  let paddleWidth = 10, paddleHeight = 80;
+  let playerPaddleY = (canvas.height - paddleHeight) / 2;
+  let computerPaddleY = (canvas.height - paddleHeight) / 2;
+  let paddleSpeed = 4;
+
+  let ballX = canvas.width / 2, ballY = canvas.height / 2;
+  let ballSpeedX = 3, ballSpeedY = 3, ballRadius = 10;
+
+  function drawRect(x, y, width, height, color) {
+    ctx.fillStyle = color;
+    ctx.fillRect(x, y, width, height);
+  }
+
+  function drawCircle(x, y, radius, color) {
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  function resetBall() {
+    ballX = canvas.width / 2;
+    ballY = canvas.height / 2;
+    ballSpeedX = -ballSpeedX;
+  }
+
+  function updateGame() {
+    // Ball movement
+    ballX += ballSpeedX;
+    ballY += ballSpeedY;
+
+    // Ball collision with top/bottom
+    if (ballY + ballRadius > canvas.height || ballY - ballRadius < 0) {
+      ballSpeedY = -ballSpeedY;
+    }
+
+    // Ball collision with paddles
+    if (ballX - ballRadius < paddleWidth && ballY > playerPaddleY && ballY < playerPaddleY + paddleHeight) {
+      ballSpeedX = -ballSpeedX;
+    }
+    if (ballX + ballRadius > canvas.width - paddleWidth && ballY > computerPaddleY && ballY < computerPaddleY + paddleHeight) {
+      ballSpeedX = -ballSpeedX;
+    }
+
+    // Scoring
+    if (ballX - ballRadius < 0 || ballX + ballRadius > canvas.width) {
+      resetBall();
+    }
+
+    // Move computer paddle
+    computerPaddleY += (ballY - (computerPaddleY + paddleHeight / 2)) * 0.05;
+  }
+
+  function renderGame() {
+    // Clear canvas
+    drawRect(0, 0, canvas.width, canvas.height, "#000");
+
+    // Draw paddles
+    drawRect(0, playerPaddleY, paddleWidth, paddleHeight, "#fff");
+    drawRect(canvas.width - paddleWidth, computerPaddleY, paddleWidth, paddleHeight, "#fff");
+
+    // Draw ball
+    drawCircle(ballX, ballY, ballRadius, "#fff");
+  }
+
+  function gameLoop() {
+    updateGame();
+    renderGame();
+    requestAnimationFrame(gameLoop);
+  }
+
+  gameLoop();
+
+  // Control player paddle with mouse
+  canvas.addEventListener("mousemove", (event) => {
+    const rect = canvas.getBoundingClientRect();
+    playerPaddleY = event.clientY - rect.top - paddleHeight / 2;
+  });
+</script>
+
+</body>
+</html>
