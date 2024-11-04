@@ -5,95 +5,98 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
+}
+
+/* Body Styling */
+body {
     list-style-position: inside;
     text-align: center;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-  }
-  
-  /* Header Styling */
-  header {
+    color: #ddd; /* Light color for text */
+    background-color: #121212; /* Dark background color */
+}
+
+/* Header Styling */
+header {
     text-align: center;
     padding: 2rem;
-    background-color: #f4f4f4;
-  }
+    background-color: #1e1e1e; /* Darker shade for the header */
+}
 
-  nav {
+nav {
     margin-top: 1rem;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
-    color: #333;
+    color: #ddd; /* Light color for links */
     padding: 0.5rem 1rem;
     border: 2px solid #007acc;
     border-radius: 5px;
     margin: 0 0.5rem;
     font-size: 1rem;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Button Hover Effect */
-  nav a:hover {
+}
+
+/* Button Hover Effect */
+nav a:hover {
     background-color: #007acc;
-    color: #fff;
-  }
-  
-  header h1 {
+    color: #000; /* Dark text on hover */
+}
+
+header h1 {
     text-align: center;
     font-size: 2.5rem;
-    color: #333;
-  }
-  
-  header p {
+    color: #ddd; /* Light color for headings */
+}
+
+header p {
     text-align: center;
     font-size: 1.2rem;
-    color: #777;
-  }
-  
-  /* Section Styling */
-  section {
+    color: #bbb; /* Slightly darker text for subtitles */
+}
+
+/* Section Styling */
+section {
     text-align: center;
     padding: 2rem;
     margin: 2rem 0;
-  }
-  
-  #about, #contact {
-    background-color: #f9f9f9;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1rem;
-  }
+    background-color: #1e1e1e; /* Dark section background */
+}
 
-  /* Link Styling */
-  a {
-    color: #007acc;
+#about, #contact {
+    background-color: #2a2a2a; /* Darker section backgrounds */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ddd; /* Light color for subheadings */
+    margin-bottom: 1rem;
+}
+
+/* Link Styling */
+a {
+    color: #1e90ff; /* Brighter blue for links */
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  #resume {
+}
+
+#resume {
     list-style-position: inside;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    color: #ddd; /* Light color for text */
 }
 
 #resume h1,
 #resume h2 {
     list-style-position: inside;
-    color: #333;
+    color: #ddd; /* Light color for headings */
 }
 
 #resume .section {
