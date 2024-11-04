@@ -32,7 +32,7 @@ nav a {
     text-decoration: none;
     color: #ddd; /* Light color for links */
     padding: 0.5rem 1rem;
-    border: 2px solid #007acc;
+    border: 2px solid #8B0000;
     border-radius: 5px;
     margin: 0 0.5rem;
     font-size: 1rem;
@@ -41,7 +41,7 @@ nav a {
 
 /* Button Hover Effect */
 nav a:hover {
-    background-color: #007acc;
+    background-color: #8B0000;
     color: #000; /* Dark text on hover */
 }
 
