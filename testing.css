@@ -1,33 +1,24 @@
 /* General Reset */
 * {
-    list-style-position: inside;
-    text-align: center;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    list-style-position: inside;
-    text-align: center;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #ddd; /* Light color for text */
-    background-color: #121212; /* Dark background color */
+    color: #ddd; /* Light text */
+    background-color: #121212; /* Dark background */
+    text-align: center; /* Center text globally if intended */
 }
 
 header {
-    text-align: center;
     padding: 2rem;
     background-color: #1e1e1e; /* Darker shade for the header */
 }
 
 header h1 {
-    text-align: center;
     font-size: 2.5rem;
-    color: #ddd; /* Light color for headings */
-}
-
-#testing {
-    background-color: #2a2a2a; /* Darker section backgrounds */
+    color: #ddd;
 }
