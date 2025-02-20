@@ -1,0 +1,24 @@
+/* General Reset */
+* {
+    list-style-position: inside;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e; /* Darker shade for the header */
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ddd; /* Light color for headings */
+}
+
+#testing {
+    background-color: #2a2a2a; /* Darker section backgrounds */
+}
