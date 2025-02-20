@@ -7,6 +7,15 @@
     box-sizing: border-box;
 }
 
+body {
+    list-style-position: inside;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ddd; /* Light color for text */
+    background-color: #121212; /* Dark background color */
+}
+
 header {
     text-align: center;
     padding: 2rem;
