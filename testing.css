@@ -8,23 +8,24 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #ddd; /* Light text */
-    background-color: #121212; /* Dark background */
+    color: #FAF8E9; /* Light text */
+    background-color: #13111B; /* Dark background */
     text-align: center; /* Center text globally if intended */
 }
 
 header {
     padding: 5rem;
-    background-color: #1e1e1e; /* Darker shade for the header */
+    background-color: #313D3B; /* Darker shade for the header */
 }
 
 header h1 {
     font-size: 2.5rem;
-    color: #ddd;
+    color: #FAF8E9;
 }
 
 .png-image {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     display: block;
+    margin: 0 auto;
 }
