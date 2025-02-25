@@ -24,6 +24,21 @@ header h1 {
     color: #FAF8E9;
 }
 
+menu a {
+    color: #FAF8E9; /* Light color for links */
+    padding: 0.5rem 1rem;
+    border: 2px solid #793218;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+menu a:hover {
+    background-color: #F08446;
+    color: #313D3B !important; /* Light text on hover */
+}
+
 .png-image {
     width: 400px;
     height: 400px;
