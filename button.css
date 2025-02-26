@@ -1,53 +1,7 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!-- HTML !-->
+<button class="button-49" role="button">Button 49</button>
 
-body {
-    font-family: 'Space Grotesk', sans-serif;
-    line-height: 1.6;
-    color: #FAF8E9; /* Light text */
-    background-color: #000000; /* Dark background */
-    text-align: center; /* Center text globally if intended */
-}
-
-header {
-    font-family: 'Space Grotesk', sans-serif;
-    padding: 5rem;
-    background-color: #000000; /* Darker shade for the header */
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #FAF8E9;
-}
-
-menu a {
-    color: #FAF8E9; /* Light color for links */
-    padding: 0.5rem 1rem;
-    border: 2px solid #793218;
-    border-radius: 5px;
-    margin: 0 0.5rem;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-menu a:hover {
-    background-color: #F08446;
-    color: #313D3B !important; /* Light text on hover */
-}
-
-.png-image {
-    width: 400px;
-    height: 400px;
-    display: block;
-    margin: 0 auto;
-}
-
-
-
+/* CSS */
 .button-49,
 .button-49:after {
   width: 150px;
