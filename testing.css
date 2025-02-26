@@ -55,11 +55,11 @@ menu a:hover {
   line-height: 78px;
   font-size: 20px;
   font-family: 'Space Grotesk', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  background: linear-gradient(45deg, transparent 5%, #F08446 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #00E6F6;
+  box-shadow: 6px 0px 0px #793218;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -82,8 +82,8 @@ menu a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  background: linear-gradient(45deg, transparent 3%, #793218 3%, #793218 5%, #F08446 5%);
+  text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #793218;
   clip-path: var(--slice-0);
 }
 
