@@ -48,8 +48,8 @@ menu a:hover {
 
 
 
-.button-49,
-.button-49:after {
+.button,
+.button:after {
   width: 150px;
   height: 76px;
   line-height: 78px;
@@ -67,7 +67,7 @@ menu a:hover {
   touch-action: manipulation;
 }
 
-.button-49:after {
+.button:after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 0 0);
   --slice-2: inset(50% -6px 30% 0);
@@ -87,7 +87,7 @@ menu a:hover {
   clip-path: var(--slice-0);
 }
 
-.button-49:hover:after {
+.button:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
@@ -140,8 +140,8 @@ menu a:hover {
 }
 
 @media (min-width: 768px) {
-  .button-49,
-  .button-49:after {
+  .button,
+  .button:after {
     width: 200px;
     height: 86px;
     line-height: 88px;
