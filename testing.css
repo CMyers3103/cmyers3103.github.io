@@ -13,11 +13,7 @@ body {
     text-align: center; /* Center text globally if intended */
 }
 
-header {
-    font-family: 'Space Grotesk', sans-serif;
-    padding: 5rem;
-    background-color: #000000; /* Darker shade for the header */
-}
+
 
 header h1 {
     font-size: 2.5rem;
