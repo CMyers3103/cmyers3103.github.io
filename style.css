@@ -57,7 +57,8 @@ header p {
     text-align: center;
     font-size: 1.2rem;
     color: #bbb; /* Slightly darker text for subtitles */
-    width: 50%;
+    margin: 0 auto;
+	max-width: 1000px;
 }
 
 /* Section Styling */
