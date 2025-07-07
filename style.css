@@ -92,10 +92,11 @@ header p {
   font-size: 20px;
   font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(45deg, transparent 5%, #8B0000 5%);
-  border: 0;
+  border-radius: 55px;
   color: #fff;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #450000;
+  box-shadow:  28px 28px 37px #5d0000,
+             -28px -28px 37px #b90000;
   outline: transparent;
   position: relative;
   user-select: none;
