@@ -1,3 +1,8 @@
+/* Set base font size on html */
+html {
+  font-size: 16px; /* base size, 1rem = 16px */
+}
+
 /* Basic Reset */
 * {
   margin: 0;
@@ -7,15 +12,17 @@
 
 /* Body Styling */
 body {
-  background-image: url("background.svg");
-  background-repeat: no-repeat;
-  background-size: cover;         /* Scales to fill the screen */
-  background-position: center;    /* Centers the image */
-
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #ddd;
   background-color: #121212;
+
+  background-image: url("background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   word-wrap: break-word;
   overflow-wrap: break-word;
   text-align: center;
@@ -23,86 +30,89 @@ body {
 
 /* Header Styling */
 header {
+  text-align: center;
+  width: 60%;
+  border-radius: 20px;
   padding: 2rem;
-  background-color: #1e1e1e;
+  background-color: #2e2e2e;
+  margin: 2rem auto;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.7),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* 40px */
   color: #ddd;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* ~19px */
   color: #bbb;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-
+/* Menu */
 .menu {
-    display: flex;  /* Arrange items in a row */
-    justify-content: center;  /* Center the buttons horizontally */
-    gap: 30px;  /* Adds spacing between buttons */
-    list-style: none;  /* Removes default bullet points */
-    padding: 0;  /* Removes extra padding */
-    margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem; /* 30px */
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0; /* 20px */
 }
 
 .menu li {
-    display: inline-block;  /* Ensures list items don't stack */
+  display: inline-block;
 }
-
-
-
 
 .menu a,
 .menu a:after {
-    width: 150px;
-    height: 76px;
-    line-height: 78px;
-    font-size: 20px;
-    font-family: sans-serif;
-    background: linear-gradient(45deg, transparent 5%, #8B0000 5%);
-    border: none;
-    color: #fff;
-    letter-spacing: 3px;
-    box-shadow:  8px 8px 17px #5d0000,
-             -8px -8px 17px #b90000;
-    outline: transparent;
-    position: relative;
-    user-select: none;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
+  width: 10rem;      /* 160px */
+  height: 4.75rem;   /* 76px */
+  line-height: 4.75rem;
+  font-size: 1.25rem; /* 20px */
+  font-family: sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #8B0000 5%);
+  border: none;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 8px 8px 17px #5d0000, -8px -8px 17px #b90000;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .menu a:after {
-    content: attr(data-text); /* Makes sure the text works for links */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #450000 3%, #450000 5%, #8B0000 5%);
-    text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #450000;
-    clip-path: var(--slice-0);
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #450000 3%, #450000 5%, #8B0000 5%);
+  text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #450000;
+  clip-path: var(--slice-0);
 }
 
-
+/* Button */
 .button,
 .button:after {
-  width: 150px;
-  height: 76px;
-  line-height: 78px;
-  font-size: 20px;
+  width: 10rem;      /* 160px */
+  height: 4.75rem;   /* 76px */
+  line-height: 4.75rem;
+  font-size: 1.25rem; /* 20px */
   font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(45deg, transparent 5%, #8B0000 5%);
   border-radius: 55px;
   color: #fff;
   letter-spacing: 3px;
-  box-shadow:  28px 28px 37px #5d0000,
-             -28px -28px 37px #b90000;
+  box-shadow: 28px 28px 37px #5d0000, -28px -28px 37px #b90000;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -117,14 +127,11 @@ header p {
   --slice-3: inset(10% -6px 85% 0);
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
-  
+
   content: 'HOME';
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: linear-gradient(45deg, transparent 3%, #450000 3%, #450000 5%, #8B0000 5%);
   text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #450000;
   clip-path: var(--slice-0);
@@ -138,43 +145,43 @@ header p {
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
+    transform: translate(-1.25rem, -0.625rem);
   }
   10% {
     clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
+    transform: translate(0.625rem, 0.625rem);
   }
   20% {
     clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
+    transform: translate(-0.625rem, 0.625rem);
   }
   30% {
     clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
+    transform: translate(0, 0.3125rem);
   }
   40% {
     clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
+    transform: translate(-0.3125rem, 0);
   }
   50% {
     clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
+    transform: translate(0.3125rem, 0);
   }
   60% {
     clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
+    transform: translate(0.3125rem, 0.625rem);
   }
   70% {
     clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
+    transform: translate(-0.625rem, 0.625rem);
   }
   80% {
     clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
+    transform: translate(1.25rem, -0.625rem);
   }
   90% {
     clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
+    transform: translate(-0.625rem, 0);
   }
   100% {
     clip-path: var(--slice-1);
@@ -182,40 +189,45 @@ header p {
   }
 }
 
+/* Responsive adjustments */
 @media (min-width: 768px) {
   .button,
   .button:after {
-    width: 200px;
-    height: 86px;
-    line-height: 88px;
+    width: 12.5rem;    /* 200px */
+    height: 5.375rem;  /* 86px */
+    line-height: 5.5rem;
   }
 }
 
-
-
+/* Section Styling */
 section {
+  text-align: center;
+  width: 60%;
+  border-radius: 20px;
   padding: 2rem;
-  margin: 2rem 0;
-  background-color: #1e1e1e;
+  background-color: #2e2e2e;
+  margin: 2rem auto;
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.7),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.2);
 }
 
-
+/* Headings */
 h2 {
-  font-size: 2rem;
+  font-size: 2rem; /* 32px */
   color: #ddd;
   margin-bottom: 1rem;
 }
 
+/* Lists */
 ul {
   padding-left: 2rem;
 }
 
-/* Link Styling */
+/* Links */
 a {
   color: #1e90ff;
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -244,7 +256,7 @@ a:hover {
   margin-left: 20px;
 }
 
-/* Slick Box (Optional Styled Block) */
+/* Slick Box */
 #slick-box {
   max-width: 600px;
   margin: 20px auto;
@@ -252,7 +264,20 @@ a:hover {
   background-color: #f9f9f9;
   border: 2px solid #3498db;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #333;
   font-family: Arial, sans-serif;
+}
+
+/* Responsive font size scaling */
+@media (max-width: 600px) {
+  html {
+    font-size: 14px; /* smaller base font */
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 12px; /* even smaller base font */
+  }
 }
