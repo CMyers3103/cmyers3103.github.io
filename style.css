@@ -57,12 +57,12 @@ header p {
     height: 76px;
     line-height: 78px;
     font-size: 20px;
-    font-family: 'Space Grotesk', sans-serif;
-    background: linear-gradient(45deg, transparent 5%, #F08446 5%);
+    font-family: sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #8B0000 5%);
     border: none;
     color: #fff;
     letter-spacing: 3px;
-    box-shadow: 6px 0px 0px #793218;
+    box-shadow: 6px 0px 0px #450000;
     outline: transparent;
     position: relative;
     user-select: none;
@@ -78,8 +78,8 @@ header p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #793218 3%, #793218 5%, #F08446 5%);
-    text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #793218;
+    background: linear-gradient(45deg, transparent 3%, #450000 3%, #450000 5%, #8B0000 5%);
+    text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #450000;
     clip-path: var(--slice-0);
 }
 
@@ -91,11 +91,11 @@ header p {
   line-height: 78px;
   font-size: 20px;
   font-family: 'Space Grotesk', sans-serif;
-  background: linear-gradient(45deg, transparent 5%, #F08446 5%);
+  background: linear-gradient(45deg, transparent 5%, #8B0000 5%);
   border: 0;
   color: #fff;
   letter-spacing: 3px;
-  box-shadow: 6px 0px 0px #793218;
+  box-shadow: 6px 0px 0px #450000;
   outline: transparent;
   position: relative;
   user-select: none;
@@ -118,8 +118,8 @@ header p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #793218 3%, #793218 5%, #F08446 5%);
-  text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #793218;
+  background: linear-gradient(45deg, transparent 3%, #450000 3%, #450000 5%, #8B0000 5%);
+  text-shadow: -3px -3px 0px #FAF8E9, 3px 3px 0px #450000;
   clip-path: var(--slice-0);
 }
 
