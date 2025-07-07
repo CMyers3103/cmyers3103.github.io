@@ -63,7 +63,8 @@ header p {
 
 /* Section Styling */
 section {
-    text-align: center;
+    display: inline-block; 
+    text-align: left;
     padding: 2rem;
     margin: 2rem 0;
     background-color: #1e1e1e; /* Dark section background */
