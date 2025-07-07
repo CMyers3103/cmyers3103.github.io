@@ -63,8 +63,7 @@ header p {
 
 /* Section Styling */
 section {
-    display: inline-block; 
-    text-align: left;
+    text-align: center;
     padding: 2rem;
     margin: 2rem 0;
     background-color: #1e1e1e; /* Dark section background */
@@ -91,6 +90,8 @@ a:hover {
 }
 
 #resume {
+    display: inline-block; 
+    text-align: left;
     list-style-position: inside;
     font-family: Arial, sans-serif;
     line-height: 1.6;
