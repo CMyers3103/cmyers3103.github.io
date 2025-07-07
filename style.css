@@ -292,7 +292,7 @@ a:hover {
   width: 12.5rem;            /* 200px */
   height: auto;         /* 550px */
   background-color: #2e2e2e;
-  border: 1px solid #ddd;
+  border: 0.2rem solid #ddd;
   border-radius: 0.5rem;
   overflow: hidden;
   display: flex;
