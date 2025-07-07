@@ -62,15 +62,15 @@ section {
   background-color: #1e1e1e;
 }
 
-#about,
-#contact {
-  background-color: #2a2a2a;
-}
 
 h2 {
   font-size: 2rem;
   color: #ddd;
   margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 2rem;
 }
 
 /* Link Styling */
