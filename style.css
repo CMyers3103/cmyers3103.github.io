@@ -1,133 +1,121 @@
 /* Basic Reset */
 * {
-    list-style-position: inside;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
-    list-style-position: inside;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #ddd; /* Light color for text */
-    background-color: #121212; /* Dark background color */
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ddd;
+  background-color: #121212;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 /* Header Styling */
 header {
-    text-align: center;
-    padding: 2rem;
-    background-color: #1e1e1e; /* Darker shade for the header */
-}
-
-nav {
-    margin-top: 1rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ddd; /* Light color for links */
-    padding: 0.5rem 1rem;
-    border: 2px solid #8B0000;
-    border-radius: 5px;
-    margin: 0 0.5rem;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Button Hover Effect */
-nav a:hover {
-    background-color: #8B0000;
-    color: #ddd !important; /* Light text on hover */
+  padding: 2rem;
+  background-color: #1e1e1e;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #ddd; /* Light color for headings */
+  font-size: 2.5rem;
+  color: #ddd;
 }
 
 header p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #bbb; /* Slightly darker text for subtitles */
-    margin: 0 auto;
-	max-width: 1000px;
+  font-size: 1.2rem;
+  color: #bbb;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 0.5rem 1rem;
+  border: 2px solid #8B0000;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #8B0000;
+  color: #ddd !important;
 }
 
 /* Section Styling */
 section {
-    text-align: center;
-    padding: 2rem;
-    margin: 2rem 0;
-    background-color: #1e1e1e; /* Dark section background */
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: #1e1e1e;
 }
 
-#about, #contact {
-    background-color: #2a2a2a; /* Darker section backgrounds */
+#about,
+#contact {
+  background-color: #2a2a2a;
 }
 
 h2 {
-    font-size: 2rem;
-    color: #ddd; /* Light color for subheadings */
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #ddd;
+  margin-bottom: 1rem;
 }
 
 /* Link Styling */
 a {
-    color: #1e90ff; /* Brighter blue for links */
-    text-decoration: none;
+  color: #1e90ff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* Resume Block */
 #resume {
-    display: inline-block; 
-    text-align: left;
-    list-style-position: inside;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    color: #ddd; /* Light color for text */
+  width: 80%;
+  margin: 2rem auto;
+  text-align: left;
+  color: #ddd;
+  line-height: 1.6;
 }
 
 #resume h1,
 #resume h2 {
-    list-style-position: inside;
-    color: #ddd; /* Light color for headings */
+  color: #ddd;
 }
 
 #resume .section {
-  width: 80%;
-  margin: 2rem auto;
-  padding: 1rem;
-  text-align: left;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
 }
 
 #resume .subsection {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-#resume {
-    width: 80%; /* Or whatever width you prefer */
-    margin: 0 auto;
-}
-
+/* Slick Box (Optional Styled Block) */
 #slick-box {
-    border: 2px solid #3498db; /* Border color */
-    border-radius: 10px; /* Smooth corners */
-    padding: 15px; /* Space inside the box */
-    background-color: #f9f9f9; /* Light background */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    max-width: 600px; /* Limit width */
-    margin: 20px auto; /* Center the box */
-    font-family: Arial, sans-serif;
-    color: #333; /* Text color */
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-family: Arial, sans-serif;
 }
