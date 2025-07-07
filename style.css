@@ -62,8 +62,8 @@ header p {
     border: none;
     color: #fff;
     letter-spacing: 3px;
-    box-shadow:  28px 28px 37px #5d0000,
-             -28px -28px 37px #b90000;
+    box-shadow:  8px 8px 17px #5d0000,
+             -8px -8px 17px #b90000;
     outline: transparent;
     position: relative;
     user-select: none;
