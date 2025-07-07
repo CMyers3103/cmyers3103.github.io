@@ -7,6 +7,11 @@
 
 /* Body Styling */
 body {
+  background-image: url("background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;         /* Scales to fill the screen */
+  background-position: center;    /* Centers the image */
+
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #ddd;
@@ -187,28 +192,7 @@ header p {
 }
 
 
-/* 
-nav {
-  margin-top: 1rem;
-}
 
-nav a {
-  text-decoration: none;
-  color: #ddd;
-  padding: 0.5rem 1rem;
-  border: 2px solid #8B0000;
-  border-radius: 5px;
-  margin: 0 0.5rem;
-  font-size: 1rem;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-  background-color: #8B0000;
-  color: #ddd !important;
-}
-*/
-/* Section Styling */
 section {
   padding: 2rem;
   margin: 2rem 0;
